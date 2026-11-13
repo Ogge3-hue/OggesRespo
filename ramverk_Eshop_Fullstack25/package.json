@@ -1,0 +1,33 @@
+{
+  "name": "ramverk_25",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev-vite": "vite",
+    "vite-private:firefox": "set BROWSER=firefox&& set BROWSER_ARGS=--private-window&& vite --open",
+    "vite-private:chrome": "set BROWSER=chrome&& set BROWSER_ARGS=--incognito&& vite --open",
+    "vite-private:edge": "set BROWSER=edge&& set BROWSER_ARGS=--inprivate&& vite --open",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "greet": "echo Hello, World!"
+  },
+  "dependencies": {
+    "axios": "^1.13.6",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.1",
+    "eslint": "^9.39.1",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.4.24",
+    "globals": "^16.5.0",
+    "vite": "^7.3.1"
+  }
+}
