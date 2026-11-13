@@ -14,8 +14,8 @@ db.serialize(() => {
 });
 
 // Hårdkodade uppgifter
-const ADMIN_USER = "admin";
-const ADMIN_PASSWORD = "hemligt123";
+const ADMIN_USER = "admin"; //FEL kan man läsa REPO:t kan man se lösenord och amind usern, då blir lösen och admin uppladdat till github
+const ADMIN_PASSWORD = "hemligt123"; //FEL
 
 // Sök produkter
 app.get("/search", (req, res) => {
@@ -46,7 +46,7 @@ app.get("/file", (req, res) => {
 
 // Enkel inloggning
 app.get("/login", (req, res) => {
-  if (req.query.user === ADMIN_USER && req.query.pass === ADMIN_PASSWORD) {
+  if (req.query.user === ADMIN_USER && req.query.pass === ADMIN_PASSWORD) { //FEL användarnamn och lösen överförs med URL-paramterar
     res.send("Välkommen admin");
   } else {
     res.status(401).send("Fel uppgifter");
